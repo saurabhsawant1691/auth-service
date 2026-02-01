@@ -77,6 +77,14 @@ Executed before the entity is first saved:
 * Sets `createdAt`
 * Sets `updatedAt`
 
+```java
+@PrePersist
+protected void onCreated() {
+    createdAt = new Date();
+    updatedAt = new Date();
+}
+```
+
 ### @PreUpdate
 
 Executed before each update:
@@ -84,9 +92,8 @@ Executed before each update:
 * Updates `updatedAt`
 
 ```java
-@PrePersist
-protected void onCreated() {
-    createdAt = new Date();
+@PreUpdate
+protected void onUpdate() {
     updatedAt = new Date();
 }
 ```

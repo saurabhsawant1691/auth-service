@@ -1,12 +1,3 @@
-<!-- 
-<project> – Root of the Maven project
-What this means
-	* Declares this file is a Maven POM
-	* XML namespaces help IDEs & Maven validate structure
-	* Required boilerplate for all Maven projects
-	
-You almost never touch this, but Maven won’t work without it.
- -->
 <project
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
